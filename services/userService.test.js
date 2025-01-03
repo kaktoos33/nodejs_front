@@ -1,6 +1,7 @@
 const service = require('./userService');
 
-jest.mock('./__mocks__/userService');
+jest.mock("./userService");//./__mocks__/userService');
+
 describe("Test service calls backend", () => {
     let id = Math.floor(Math.random() * 100);
     test("post register should return a user", async () => {
